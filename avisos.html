@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avisos</title>
+    <link rel="stylesheet" href="components.css">
+    <style>
+        .avisos-container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .aviso-card {
+            background: #ffffff;
+            padding: 18px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+            border-left: 5px solid #3498db;
+        }
+
+        .aviso-card h3 {
+            margin-bottom: 6px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .aviso-card p {
+            margin: 4px 0;
+            font-size: 15px;
+            color: #555;
+        }
+
+        .aviso-data {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+        }
+
+        .aviso-important {
+            border-left-color: #e74c3c !important;
+        }
+
+        .aviso-warning {
+            border-left-color: #f1c40f !important;
+        }
+
+        .aviso-success {
+            border-left-color: #2ecc71 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="avisos-container">
+        <h2>📢 Avisos</h2>
+
+        <div class="aviso-card aviso-important">
+            <h3>Manutenção no sistema</h3>
+            <p>O sistema ficará indisponível amanhã das 13h às 16h para manutenção.</p>
+            <p class="aviso-data">Postado em: 03/12/2025</p>
+        </div>
+
+        <div class="aviso-card aviso-warning">
+            <h3>Aviso sobre reservas de veículos</h3>
+            <p>Devido à alta demanda, apenas 1 veículo poderá ser reservado por usuário até sexta-feira.</p>
+            <p class="aviso-data">Postado em: 01/12/2025</p>
+        </div>
+
+        <div class="aviso-card aviso-success">
+            <h3>Reserva aprovada</h3>
+            <p>Sua reserva da Sala 204 para o dia 06/12 foi aprovada!</p>
+            <p class="aviso-data">Postado em: 30/11/2025</p>
+        </div>
+    </div>
+
+</body>
+</html>
