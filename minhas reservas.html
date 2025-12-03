@@ -11,16 +11,37 @@
 
     <h1 class="titulo">Minhas Reservas</h1>
 
-    <div class="container-opcoes">
+    <div class="card">
 
-        <div class="box-opcao" onclick="window.location.href='reservas sala.html'">
-            <h2>Reservas de Sala</h2>
-            <p>Veja ou solicite reservas de salas de informática.</p>
+        <h2 class="subtitulo">Reservas de Sala</h2>
+
+        <div class="lista">
+            <!-- Exemplo 1 -->
+            <div class="item">
+                <p><strong>Sala:</strong> Laboratório 01</p>
+                <p><strong>Data:</strong> 12/11/2025</p>
+                <p><strong>Horário:</strong> 14:00 - 16:00</p>
+                <span class="status pendente">Pendente</span>
+            </div>
+
+            <!-- Exemplo 2 -->
+            <div class="item">
+                <p><strong>Sala:</strong> Sala de Reunião</p>
+                <p><strong>Data:</strong> 03/10/2025</p>
+                <p><strong>Horário:</strong> 08:00 - 10:00</p>
+                <span class="status aprovado">Aprovado</span>
+            </div>
         </div>
 
-        <div class="box-opcao" onclick="window.location.href='reservas veiculo.html'">
-            <h2>Reservas de Veículo</h2>
-            <p>Acesse suas reservas de transporte.</p>
+        <h2 class="subtitulo">Reservas de Veículos</h2>
+
+        <div class="lista">
+            <div class="item">
+                <p><strong>Veículo:</strong> Van Escolar</p>
+                <p><strong>Destino:</strong> Patos de Minas</p>
+                <p><strong>Saída:</strong> 20/10/2025 - 06:00</p>
+                <span class="status negado">Negado</span>
+            </div>
         </div>
 
     </div>
