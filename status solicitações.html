@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitações Pendentes</title>
+    <link rel="stylesheet" href="componentes.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #333;
+        }
+
+        .solicitacao-card {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .solicitacao-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .pendente { background: #fff3cd; color: #856404; }
+        .aprovado { background: #d4edda; color: #155724; }
+        .rejeitado { background: #f8d7da; color: #721c24; }
+
+        .motivo {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Solicitações Pendentes</h2>
+
+    <!-- Solicitação Pendente -->
+    <div class="solicitacao-card">
+        <div class="solicitacao-header">
+            <span><strong>Reserva:</strong> Sala 102</span>
+            <span class="status pendente">Pendente</span>
+        </div>
+        <p><strong>Data solicitada:</strong> 12/12/2025</p>
+        <p><strong>Horário:</strong> 14:00 às 16:00</p>
+    </div>
+
+    <!-- Solicitação Aprovada -->
+    <div class="solicitacao-card">
+        <div class="solicitacao-header">
+            <span><strong>Reserva:</strong> Veículo - Carro A</span>
+            <span class="status aprovado">Aprovado</span>
+        </div>
+        <p><strong>Data solicitada:</strong> 18/12/2025</p>
+        <p><strong>Horário:</strong> 08:00 às 12:00</p>
+    </div>
+
+    <!-- Solicitação Rejeitada -->
+    <div class="solicitacao-card">
+        <div class="solicitacao-header">
+            <span><strong>Reserva:</strong> Sala 204</span>
+            <span class="status rejeitado">Rejeitado</span>
+        </div>
+        <p><strong>Data solicitada:</strong> 20/12/2025</p>
+        <p><strong>Horário:</strong> 09:00 às 11:00</p>
+        <p class="motivo"><strong>Motivo:</strong> Sala já ocupada neste horário.</p>
+    </div>
+
+</body>
+</html>
