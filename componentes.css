@@ -1,74 +1,74 @@
 
+/* Fonte padrão */
+
 body {
+  font-family: "Inter", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  background: #f5f7fa;
+  color: #333;
 }
 
-header {
-  background: #333;
-  color: #fff;
-  padding: 15px;
+/* Estilização geral de títulos e outros textos */
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  text-align: center;
+
+}
+
+p {
   text-align: center;
 }
 
-.container {
-  max-width: 900px;
-  margin: 30px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 6px;
-  border: 1px dashed #aaa;
-}
+/* Inputs e selects */
 
-input, select, button, textarea {
+input, select, textarea {
   width: 100%;
   padding: 10px;
   margin: 8px 0;
-  border: 1px dashed #999;
-  border-radius: 4px;
-  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fff;
+  box-sizing: border-box;
 }
 
+/* Botões */
+
 button {
-  background: #333;
+  padding: 10px 18px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4a6ee0;
+  color: #fff;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #3d5dcc;
+}
+
+.btn {
+  background: #2f3640;
   color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
 }
 
-nav {
-  background: #222;
-  padding: 10px;
-  display: flex;
-  gap: 20px;
+.btn:hover { 
+  opacity: 0.95; 
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.descricao {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 15px;
-    line-height: 1.4;
-}
-
-.pagina {
-    padding: 20px;
-}
-
-.titulo {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.container-opcoes {
-    display: flex;
-    gap: 20px;
+.box-opcao:hover {
+    transform: scale(1.06);
+    background: #f0f0f0;
 }
 
 .box-opcao {
@@ -77,53 +77,198 @@ nav a {
     background: white;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
-.box-opcao:hover {
-    transform: scale(1.02);
-    background: #f0f0f0;
+/* Imagens */
+
+.Logo_UEMG {
+  position: absolute;
+  top: 0.5px;
+  right: 20px;
+  width: 180px;        
+  opacity: 1;
 }
+
+/* Cartões / Containers */
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+/* Tabelas padronizadas */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th {
+  background: #4a6ee0;
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Links */
+
+a {
+  color: #4a6ee0;
+  text-decoration: none;
+  font-weight: 500; 
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.login-links {
+  margin-top: 15px;  
+}
+
+
+/* Layout padrão das páginas */
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 60px;
+}
+
+/* Avisos */
+
+.alert {
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.alert-success {
+  background: #d3f9d8;
+  color: #2b8a3e;
+}
+
+.alert-error {
+  background: #ffe3e3;
+  color: #c92a2a;
+}
+
+.alert-warning {
+  background: #fff3bf;
+  color: #e67700;
+}
+
+/* RESET BÁSICO */
+
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* CONTAINER PRINCIPAL (layout) */
 
 .layout {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  min-height: 100vh;
 }
 
+/* SIDEBAR (menu lateral) */
+
 .sidebar {
-    width: 240px;
-    background: white;
-    padding: 20px;
-    border-right: 1px solid #ddd;
+  width: 230px;
+  background-color: #2f3640;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+  gap: 6px;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px 12px;
 }
 
 .sidebar a {
-    display: block;
-    margin: 18px 0;
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.18s, padding-left 0.12s;
 }
+
+.sidebar a:hover {
+  background-color: #414b57;
+  padding-left: 22px;
+}
+
+/* ÁREA DE CONTEÚDO (direita) */
 
 .conteudo {
-    flex: 1;
-    background: #f5f6fa;
-    padding: 20px;
+  flex: 1;
+  background: #ffffff;
+  min-height: 100vh;
+  display: block;
 }
 
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: transparent;
+/* IFRAME que carrega as páginas */
+
+#iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+  display: block;
+  background: #fff;
 }
 
-textarea.input {
-    resize: vertical;
-    padding: 10px;
+/* Estilos para o conteúdo dentro do iframe quando você abrir páginas com cards */
+
+.card {
+  margin: 28px auto;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
-select.input {
-    padding: 10px;
+/* Inputs/Buttons (caso páginas carregadas no iframe usem essas classes e você queira consistência) */
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+/* Responsividade mínima */
+
+@media (max-width: 900px) {
+  .sidebar { width: 60px; font-size: 12px; }
+  .sidebar a { padding: 10px; }
 }
