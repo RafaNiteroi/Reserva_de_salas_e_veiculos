@@ -9,30 +9,34 @@
 
 <body>
 
+<img src="Imagens/Logo_UEMG.png" class="Logo_UEMG">
+
 <div class="layout">
 
     <!-- Menu Lateral -->
     <aside class="sidebar">
+
         <h2 class="logo">Sistema</h2>
 
-        <a href="#" onclick="carregar('home.html')">🏠 Home</a>
-        <a href="#" onclick="carregar('perfil.html')">👤 Perfil</a>
-        <a href="#" onclick="carregar('solicitações de reservas.html')">📄 Solicitar Reserva</a>
-        <a href="#" onclick="carregar('status solicitações.html')">Solicitações Pendentes</a>
-        <a href="#" onclick="carregar('minhas reservas.html')">Minhas Reservas</a>
+        <a href="#" onclick="carregar('home.html')">Home</a>
+        <a href="#" onclick="carregar('perfil.html')">Perfil</a>
+        <a href="#" onclick="carregar('solicitacoes_de_reservas.html')">Solicitar Reserva</a>
+        <a href="#" onclick="carregar('status_solicitacoes.html')">Solicitações Pendentes</a>
+        <a href="#" onclick="carregar('minhas_reservas.html')">Minhas Reservas</a>
         <a href="#" onclick="carregar('avisos.html')">Avisos</a>
+
     </aside>
 
     <!-- Área Dinâmica -->
     <main class="conteudo">
-        <iframe id="frame" src="home.html"></iframe>
+        <iframe id="iframe" src="home.html"></iframe>
     </main>
 
 </div>
 
 <script>
     function carregar(pagina) {
-        document.getElementById('frame').src = pagina;
+        document.getElementById('iframe').src = pagina;
     }
 </script>
 
