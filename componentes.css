@@ -36,6 +36,16 @@ input, select, textarea {
   box-sizing: border-box;
 }
 
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
 /* Botões */
 
 button {
@@ -73,9 +83,10 @@ button:hover {
 
 .box-opcao {
     flex: 1;
-    padding: 25px;
+    width: 45%;
+    padding: 50px;
     background: white;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
@@ -91,7 +102,7 @@ button:hover {
   opacity: 1;
 }
 
-/* Cartões / Containers */
+/* Cartões */
 
 .card {
   background: white;
@@ -99,6 +110,15 @@ button:hover {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   margin-bottom: 20px;
+}
+
+.card {
+  margin: 28px auto;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
 /* Tabelas padronizadas */
@@ -137,14 +157,23 @@ a:hover {
   margin-top: 15px;  
 }
 
-
-/* Layout padrão das páginas */
+/* Containers */
 
 .container {
   max-width: 800px;
   margin: auto;
   padding: 60px;
 }
+
+.container-opcoes {
+    display: flex;
+    flex-direction: column;   /* Como estão um abaixo do outro */
+    align-items: center;      /* CENTRALIZA NA HORIZONTAL */
+    gap: 40px;                /* Espaço entre as caixas */
+    width: 100%;
+    margin-top: 40px;
+}
+
 
 /* Avisos */
 
@@ -241,29 +270,6 @@ html, body {
   border: none;
   display: block;
   background: #fff;
-}
-
-/* Estilos para o conteúdo dentro do iframe quando você abrir páginas com cards */
-
-.card {
-  margin: 28px auto;
-  max-width: 900px;
-  background: #fff;
-  border-radius: 10px;
-  padding: 24px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-}
-
-/* Inputs/Buttons (caso páginas carregadas no iframe usem essas classes e você queira consistência) */
-
-input, select, textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  margin-top: 8px;
-  margin-bottom: 14px;
-  font-size: 14px;
 }
 
 /* Responsividade mínima */
